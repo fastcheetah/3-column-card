@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: "Big-Shoulders";
+    src: url(/Big_Shoulders_Display/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Lexend-Deca";
+    src: url(Lexend_Deca/LexendDeca-VariableFont_wght.ttf);
+}
+.root{
+    --Brightorange: hsl(31, 77%, 52%);
+--Darkcyan: hsl(184, 100%, 22%);
+--Verydarkcyan: hsl(179, 100%, 13%);
+--Transparentwhite: hsla(0, 0%, 100%, 0.75);
+--Verylightgray: hsl(0, 0%, 95%);
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 50px auto;
+
+    
+}
+h2{
+    font-family: "Big-Shoulders";
+    color: white;
+    font-size: 2.1875rem;
+    
+}
+img{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+h2{
+    padding-bottom: 10px;
+}
+p{
+    font-family: "Lexend-Deca";
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 1rem;
+}
+a{
+    text-decoration: none;
+    font-family: "Lexend-Deca";
+    padding: 10px 20px;
+    background-color: white;
+    margin: 10px auto;
+    margin-bottom: 50px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+
+}
+.sedans-a{
+    color:hsl(31, 77%, 52%)
+}
+.sedans-a:hover{
+    color: white;
+    background-color: hsl(31, 77%, 52%);
+    border: 2px solid white;
+}
+.suv-a{
+    color:hsl(184, 100%, 22%) ;
+}
+.suv-a:hover{
+    color: white;
+    background-color: hsl(184, 100%, 22%) ;
+    border: 2px solid white;
+}
+.luxury-a{
+   color: hsl(179, 100%, 13%);
+}
+.luxury-a:hover{
+    color: white;
+    background-color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+}
+.sedans-section{
+    background-color:hsl(31, 77%, 52%) ;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.suv-section{
+    background-color:hsl(184, 100%, 22%) ;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+}
+.luxury-section{
+    background-color: hsl(179, 100%, 13%);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media screen and (min-width:500px) {
+    .main-container{
+        flex-direction: row;
+        width: 75%;
+        height: 80vh;
+       
+    }
+    .sedans-section{
+        border-radius:0px ;
+        /* border-top-left-radius: 10px; */
+        /* border-bottom-left-radius: 10px; */
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        
+    }
+    .luxury-section{
+        /* border-bottom-right-radius: 10px; */
+        /* border-top-right-radius: 10px; */
+        border-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    img{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    h2{
+        padding-bottom: 25px;
+    }
+    p{
+        padding-bottom: 50px;
+    }
+}
